@@ -2,11 +2,43 @@
 layout: default
 title: Greg Gilbert
 ---
-<div class="blurb">
-	<h1>Hi, I'm Greg!</h1>
-	<p>I'm a PhD candidate studying exoplanets at the <a href="https://astrophysics.uchicago.edu/">University of Chicago</a></p>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+
 	
-	<body>
-		<img src="headshot.jpg" width="240", height="240">
-	</body>
-</div><!-- /.blurb -->
+<body>
+	<div class="row">
+	  <div class="column left">
+	    <h2>PIC GOES HERE</h2>
+	  </div>
+	  <div class="column right">
+	    <h1>Hi, I'm Greg!</h1>
+	    <p>I'm a PhD candidate studying exoplanets at the <a href="https://astrophysics.uchicago.edu/">University of Chicago</a></p>
+	  </div>
+	</div>
+</body>
