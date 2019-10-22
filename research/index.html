@@ -2,6 +2,37 @@
 layout: default
 title: Greg Gilbert - Research
 ---
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+
 
 <div class="blurb">
 	<h2>Exoplanetary System Architectures</h2>
@@ -10,7 +41,16 @@ title: Greg Gilbert - Research
 	
 	<h2>Orbital Dynamics</h2>
 	<p>When multiple planets orbit the same star, their mutual gravitational interactions perturb their orbits away from simple Keplerian motion. If the planets transit, these dynamical perturbations can be observed as transit timing variations (TTVs) - transits which occur earlier or later than expected from a Keplerian model. TTVs are used to constrain the masses and eccentricities of planets, as well as to detect new planets or, conversely, to rule out the presence of unseen planets. I model TTVs from start to finish, first fitting transit lightcurves in order to measure individual transit times and then running N-body integrations in order to simulate the short-term dynamical behavior and long-term dynamical stability of each system.</p> 
-	<p><img src="/images/K18c-ttv.png" style="max-width:100%;height:auto;"></p>  
-	<p><img src="/images/K18d-ttv.png" style="max-width:100%;height:auto;"></p>  
+	
+	<div class="row">
+	  <div class="column">
+	    <p><img src="/images/K18c-ttv.png" style="max-width:100%;height:auto;"></p>
+	  </div>
+	  <div class="column">
+	    <p><img src="/images/K18d-ttv.png" style="max-width:100%;height:auto;"></p>
+	  </div>
+	</div>
+	<p></p>  
+	<p></p>  
 	
 </div><!-- /.blurb -->
